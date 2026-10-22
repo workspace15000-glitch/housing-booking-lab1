@@ -1,0 +1,87 @@
+{
+  "hosts": [
+    {
+      "id": "h1",
+      "name": "Алексей",
+      "phone": "000-00-01"
+    }
+  ],
+  "guests": [
+    {
+      "id": "g1",
+      "name": "Мария",
+      "phone": "000-00-02"
+    }
+  ],
+  "housing": [
+    {
+      "id": "a1",
+      "type": "apartment",
+      "title": "Квартира в центре",
+      "host_id": "h1",
+      "city": "Москва",
+      "street": "Учебная",
+      "building": "1",
+      "price": 3000,
+      "capacity": 3,
+      "amenities": [
+        "Wi-Fi"
+      ],
+      "pets_allowed": true,
+      "smoking_allowed": false,
+      "rooms": 2
+    },
+    {
+      "id": "h2",
+      "type": "house",
+      "title": "Дом за городом",
+      "host_id": "h1",
+      "city": "Тула",
+      "street": "Лесная",
+      "building": "2",
+      "price": 5000,
+      "capacity": 5,
+      "amenities": [],
+      "pets_allowed": false,
+      "smoking_allowed": false,
+      "floors": 2
+    },
+    {
+      "id": "r1",
+      "type": "room",
+      "title": "Комната",
+      "host_id": "h1",
+      "city": "Москва",
+      "street": "Учебная",
+      "building": "3",
+      "price": 1500,
+      "capacity": 1,
+      "amenities": [],
+      "pets_allowed": false,
+      "smoking_allowed": false,
+      "shared_bathroom": true
+    }
+  ],
+  "bookings": [
+    {
+      "id": "b1",
+      "guest_id": "g1",
+      "accommodation_id": "a1",
+      "check_in": "2026-11-01",
+      "check_out": "2026-11-04",
+      "guest_count": 2,
+      "price": 3000,
+      "status": "active"
+    },
+    {
+      "id": "b2",
+      "guest_id": "g1",
+      "accommodation_id": "r1",
+      "check_in": "2026-11-05",
+      "check_out": "2026-11-06",
+      "guest_count": 1,
+      "price": 1500,
+      "status": "cancelled"
+    }
+  ]
+}
